@@ -1,1146 +1,1580 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mifeb Global offers professional staff training, leadership development, real estate education, MBA programme opportunities and construction services in Abuja, Nigeria.">
+
+<meta name="description" content="Mifeb Global provides workplace staff training, leadership development, real estate training, MBA programme opportunities and building construction services in Abuja, Nigeria.">
+
 <meta name="theme-color" content="#06245b">
+
 <title>Mifeb Global | Empowering Creative Leaders</title>
 
 <style>
 :root {
-    --navy: #06245b;
-    --blue: #0b4da2;
-    --blue2: #1267c5;
-    --gold: #f6bd16;
-    --gold2: #ffda48;
-    --ink: #10264b;
-    --muted: #5c6b82;
-    --pale: #f3f7fd;
-    --white: #fff;
-    --shadow: 0 14px 36px rgba(5,35,83,.11);
+  --navy: #06245b;
+  --blue: #0b4da2;
+  --blue2: #1267c5;
+  --gold: #f6bd16;
+  --gold2: #ffda48;
+  --ink: #10264b;
+  --muted: #5c6b82;
+  --pale: #f3f7fd;
+  --white: #ffffff;
+  --shadow: 0 14px 36px rgba(5,35,83,.11);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--muted);
-    line-height: 1.65;
-    background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--muted);
+  line-height: 1.65;
+  background: white;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .container {
-    width: min(1160px, 91%);
-    margin: 0 auto;
+  width: min(1160px, 91%);
+  margin: auto;
 }
 
 /* TOP BAR */
 
 .topbar {
-    background: var(--navy);
-    color: white;
-    font-size: 13px;
-    padding: 8px 0;
+  background: var(--navy);
+  color: white;
+  font-size: 13px;
+  padding: 8px 0;
 }
 
 .topbar .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-/* HEADER */
+/* HEADER AND NAVIGATION */
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(255,255,255,.98);
-    box-shadow: 0 3px 18px rgba(6,36,91,.08);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 3px 18px rgba(6,36,91,.08);
 }
 
 .nav-wrap {
-    min-height: 84px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    color: var(--navy);
-    font-weight: 900;
-    font-size: 25px;
+  display: flex;
+  align-items: center;
 }
 
-.brand-mark {
-    width: 45px;
-    height: 45px;
-    display: grid;
-    place-items: center;
-    color: var(--navy);
-    background: linear-gradient(135deg,#ffe36a,#e8a900);
-    clip-path: polygon(50% 0,100% 28%,100% 100%,0 100%,0 28%);
-    font-size: 28px;
-}
-
-.brand small {
-    display: block;
-    font-size: 10px;
-    letter-spacing: 4px;
-    margin-top: 5px;
+.brand-logo {
+  width: 205px;
+  max-height: 78px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 27px;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  list-style: none;
 }
 
 .nav-links a {
-    color: var(--ink);
-    font-size: 14px;
-    font-weight: 700;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .nav-links a:hover {
-    color: var(--blue2);
+  color: var(--blue2);
 }
 
-.nav-cta, .btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 9px;
-    padding: 13px 21px;
-    border-radius: 7px;
-    font-weight: 800;
-    border: 0;
-    cursor: pointer;
-    transition: .2s ease;
+.nav-cta,
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 21px;
+  border-radius: 7px;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  transition: .2s ease;
 }
 
-.nav-cta, .btn-gold {
-    color: var(--navy);
-    background: linear-gradient(135deg,var(--gold2),#f2ad00);
+.nav-cta,
+.btn-gold {
+  color: var(--navy);
+  background: linear-gradient(135deg,var(--gold2),#f2ad00);
 }
 
-.nav-cta:hover, .btn-gold:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(246,189,22,.28);
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(246,189,22,.28);
 }
 
 .menu-btn {
-    display: none;
-    border: 0;
-    background: none;
-    color: var(--navy);
-    font-size: 29px;
-    cursor: pointer;
+  display: none;
+  border: 0;
+  background: none;
+  color: var(--navy);
+  font-size: 29px;
+  cursor: pointer;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
-    position: relative;
-    overflow: hidden;
-    color: white;
-    background:
-    linear-gradient(90deg,rgba(3,26,69,.98),rgba(5,48,112,.85),rgba(4,46,104,.35)),
-    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1900&q=85") center/cover;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background:
+    linear-gradient(90deg,rgba(3,26,69,.98),rgba(5,48,112,.91),rgba(4,46,104,.35)),
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1900&q=85')
+    center/cover;
 }
 
 .hero:after {
-    content: "";
-    position: absolute;
-    height: 9px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(90deg,var(--gold),#fff0a0,var(--gold));
+  content: '';
+  position: absolute;
+  height: 9px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg,var(--gold),#fff0a0,var(--gold));
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
-    padding: 105px 0 115px;
-    max-width: 760px;
+  position: relative;
+  z-index: 1;
+  padding: 105px 0 115px;
+  max-width: 760px;
 }
 
 .eyebrow {
-    color: #f7c62d;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-weight: 900;
+  color: #f7c62d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 900;
 }
 
 h1 {
-    color: white;
-    font-size: clamp(39px,5.5vw,66px);
-    line-height: 1.08;
-    margin: 17px 0 22px;
-    letter-spacing: -1.5px;
+  color: white;
+  font-size: clamp(39px,5.5vw,66px);
+  line-height: 1.08;
+  margin: 17px 0 22px;
+  letter-spacing: -1.5px;
 }
 
-h1 span, .gold-text {
-    color: var(--gold2);
+h1 span,
+.gold-text {
+  color: var(--gold2);
 }
 
 .hero p {
-    color: #edf4ff;
-    max-width: 620px;
-    font-size: 17px;
-    margin-bottom: 30px;
+  color: #edf4ff;
+  max-width: 620px;
+  font-size: 17px;
+  margin-bottom: 30px;
 }
 
 .hero-actions {
-    display: flex;
-    gap: 13px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
 }
 
 .btn-outline {
-    color: white;
-    border: 1px solid white;
-    background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,.8);
+  background: transparent;
 }
 
 .btn-outline:hover {
-    background: white;
-    color: var(--navy);
+  background: white;
+  color: var(--navy);
 }
 
 /* GENERAL SECTIONS */
 
 section {
-    padding: 83px 0;
+  padding: 83px 0;
 }
 
 .section-head {
-    text-align: center;
-    max-width: 720px;
-    margin: 0 auto 43px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 43px;
 }
 
 .section-head h2 {
-    color: var(--navy);
-    font-size: clamp(29px,4vw,42px);
-    line-height: 1.2;
-    margin: 10px 0 13px;
+  color: var(--navy);
+  font-size: clamp(29px,4vw,42px);
+  line-height: 1.2;
+  margin: 10px 0 13px;
 }
 
 .section-head p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 /* ABOUT */
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
 }
 
 .about-photo {
-    min-height: 390px;
-    border-radius: 15px;
-    background:
-    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85") center/cover;
-    box-shadow: var(--shadow);
+  min-height: 390px;
+  border-radius: 15px;
+  background:
+    linear-gradient(0deg,rgba(4,34,83,.12),rgba(4,34,83,.02)),
+    url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85')
+    center/cover;
+  box-shadow: var(--shadow);
 }
 
 .about-copy h2 {
-    color: var(--navy);
-    font-size: clamp(29px,4vw,39px);
-    line-height: 1.2;
-    margin: 12px 0 18px;
+  color: var(--navy);
+  font-size: clamp(29px,4vw,39px);
+  line-height: 1.2;
+  margin: 12px 0 18px;
 }
 
 .about-copy p {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .about-copy .btn {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* SERVICES */
 
 .services {
-    background: var(--pale);
+  background: var(--pale);
 }
 
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 23px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 23px;
 }
 
 .service-card {
-    background: white;
-    border: 1px solid #e7edf6;
-    border-radius: 13px;
-    padding: 28px;
-    box-shadow: 0 7px 22px rgba(8,43,104,.05);
-    transition: .25s;
+  background: white;
+  border: 1px solid #e7edf6;
+  border-radius: 13px;
+  padding: 28px;
+  box-shadow: 0 7px 22px rgba(8,43,104,.05);
+  transition: .25s;
 }
 
 .service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
 }
 
 .service-icon {
-    width: 54px;
-    height: 54px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: #fff4cf;
-    color: var(--navy);
-    font-size: 25px;
-    margin-bottom: 18px;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #fff4cf;
+  color: var(--navy);
+  font-size: 25px;
+  margin-bottom: 18px;
 }
 
 .service-card h3 {
-    color: var(--navy);
-    font-size: 19px;
-    line-height: 1.3;
-    margin-bottom: 11px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 11px;
 }
 
 .service-card p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-.service-card a {
-    display: inline-block;
-    color: var(--blue);
-    font-size: 13px;
-    font-weight: 800;
-    margin-top: 17px;
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 19px;
+  padding: 10px 14px;
+  border: 1px solid #d7e4f7;
+  border-radius: 7px;
+  background: #f5f8fe;
+  cursor: pointer;
 }
 
-/* PROGRAMME FLYERS */
+.explore-btn:hover {
+  color: white;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+/* EXPLORE MORE POP-UP */
+
+.service-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 22px;
+  background: rgba(3,18,48,.72);
+  overflow-y: auto;
+}
+
+.service-modal.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-modal-panel {
+  position: relative;
+  width: min(760px,100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: clamp(24px,5vw,42px);
+  border-radius: 17px;
+  background: white;
+  box-shadow: 0 25px 80px rgba(0,0,0,.25);
+}
+
+.service-modal-panel h2 {
+  color: var(--navy);
+  font-size: clamp(25px,4vw,35px);
+  line-height: 1.2;
+  margin: 8px 45px 15px 0;
+}
+
+.service-modal-panel h3 {
+  color: var(--navy);
+  font-size: 17px;
+  margin: 22px 0 8px;
+}
+
+.service-modal-panel p {
+  margin-bottom: 12px;
+}
+
+.service-modal-panel ul {
+  padding-left: 21px;
+  margin: 8px 0 16px;
+}
+
+.service-modal-panel li {
+  margin: 6px 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #edf2fa;
+  color: var(--navy);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+/* FLYERS */
 
 .programmes {
-    background: white;
+  background: white;
 }
 
 .flyer-grid {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  align-items: stretch;
 }
 
 .flyer-card {
-    overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #e6ebf3;
-    background: white;
-    box-shadow: 0 8px 25px rgba(5,35,83,.08);
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #e6ebf3;
+  background: white;
+  box-shadow: 0 8px 25px rgba(5,35,83,.08);
 }
 
 .flyer-card img {
-    width: 100%;
-    aspect-ratio: 4/5;
-    object-fit: cover;
-    object-position: top;
-    background: #eaf0f8;
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: contain;
+  object-position: top;
+  background: #eaf0f8;
 }
 
 .flyer-caption {
-    padding: 16px;
+  padding: 16px;
 }
 
 .flyer-caption h3 {
-    color: var(--navy);
-    font-size: 16px;
-    line-height: 1.3;
-    margin-bottom: 8px;
+  color: var(--navy);
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 8px;
 }
 
 .flyer-caption p {
-    font-size: 13px;
-    margin-bottom: 13px;
+  font-size: 13px;
+  margin-bottom: 13px;
 }
 
 .flyer-caption a {
-    color: var(--blue);
-    font-size: 13px;
-    font-weight: 800;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 /* WHY CHOOSE US */
 
 .why {
-    color: white;
-    background:
+  color: white;
+  background:
     radial-gradient(circle at 85% 20%,#1267c5,transparent 32%),
     linear-gradient(120deg,#041d4d,#073b87);
 }
 
 .why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 55px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
 }
 
 .why h2 {
-    color: white;
-    font-size: clamp(30px,4vw,42px);
-    line-height: 1.2;
-    margin: 12px 0 18px;
+  color: white;
+  font-size: clamp(30px,4vw,42px);
+  line-height: 1.2;
+  margin: 12px 0 18px;
 }
 
 .why p {
-    color: #dce8fb;
+  color: #dce8fb;
 }
 
 .why-list {
-    display: grid;
-    gap: 21px;
+  display: grid;
+  gap: 21px;
 }
 
 .why-item {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
 }
 
 .check {
-    flex: 0 0 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    background: var(--gold);
-    color: var(--navy);
-    font-weight: 900;
+  flex: 0 0 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 900;
 }
 
 .why-item h3 {
-    color: white;
-    font-size: 17px;
-    margin-bottom: 3px;
+  color: white;
+  font-size: 17px;
+  margin-bottom: 3px;
 }
 
 .why-item p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* CALL TO ACTION */
 
 .cta {
-    background: linear-gradient(110deg,#fff9e6,#f1f6ff);
-    text-align: center;
+  background: linear-gradient(110deg,#fff9e6,#f1f6ff);
+  text-align: center;
 }
 
 .cta h2 {
-    color: var(--navy);
-    font-size: clamp(28px,4vw,40px);
-    margin-bottom: 12px;
+  color: var(--navy);
+  font-size: clamp(28px,4vw,40px);
+  margin-bottom: 12px;
 }
 
 .cta p {
-    max-width: 690px;
-    margin: 0 auto 24px;
+  max-width: 690px;
+  margin: 0 auto 24px;
 }
 
 /* CONTACT */
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: 45px;
-    align-items: start;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 45px;
+  align-items: start;
 }
 
 .contact-copy h2 {
-    color: var(--navy);
-    font-size: 36px;
-    line-height: 1.2;
-    margin: 12px 0 15px;
+  color: var(--navy);
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 12px 0 15px;
 }
 
 .contact-card {
-    background: var(--pale);
-    border: 1px solid #e5ebf4;
-    border-radius: 13px;
-    padding: 30px;
+  background: var(--pale);
+  border: 1px solid #e5ebf4;
+  border-radius: 13px;
+  padding: 30px;
 }
 
 .contact-row {
-    display: flex;
-    gap: 14px;
-    margin-bottom: 20px;
-    align-items: flex-start;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: flex-start;
 }
 
 .contact-row:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .contact-symbol {
-    width: 39px;
-    height: 39px;
-    flex: 0 0 39px;
-    display: grid;
-    place-items: center;
-    border-radius: 9px;
-    background: #fff0bf;
-    color: var(--navy);
-    font-size: 18px;
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #fff0bf;
+  color: var(--navy);
+  font-size: 18px;
 }
 
 .contact-row strong {
-    display: block;
-    color: var(--navy);
-    margin-bottom: 3px;
+  display: block;
+  color: var(--navy);
+  margin-bottom: 3px;
 }
 
 .contact-row a {
-    color: var(--blue);
-    overflow-wrap: anywhere;
+  color: var(--blue);
+  overflow-wrap: anywhere;
 }
 
 .social-names {
-    font-weight: 700;
-    color: var(--blue);
+  font-weight: 700;
+  color: var(--blue);
 }
 
 /* FOOTER */
 
 footer {
-    color: #d7e2f2;
-    background: #041a43;
-    padding: 52px 0 20px;
+  color: #d7e2f2;
+  background: #041a43;
+  padding: 52px 0 20px;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 35px;
+}
+
+.footer-logo {
+  width: 190px;
+  max-height: 75px;
+  object-fit: contain;
+  object-position: left center;
+  background: white;
+  border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 14px;
 }
 
 footer h3 {
-    color: white;
-    margin-bottom: 14px;
+  color: white;
+  margin-bottom: 14px;
 }
 
-footer p, footer a {
-    font-size: 13px;
+footer p,
+footer a {
+  font-size: 13px;
 }
 
 .footer-links {
-    display: grid;
-    gap: 9px;
+  display: grid;
+  gap: 9px;
 }
 
 .footer-links a:hover {
-    color: var(--gold2);
-}
-
-.footer-brand {
-    color: white;
-    font-weight: 900;
-    font-size: 23px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+  color: var(--gold2);
 }
 
 .copyright {
-    border-top: 1px solid rgba(255,255,255,.16);
-    padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.16);
+  padding-top: 18px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:950px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 22px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 12px 20px rgba(0,0,0,.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .flyer-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  .topbar .container {
+    justify-content: center;
     text-align: center;
-    font-size: 12px;
-}
+  }
 
-/* MOBILE RESPONSIVENESS */
+  .nav-wrap {
+    min-height: 73px;
+  }
 
-@media (max-width:950px) {
-    .menu-btn {
-        display: block;
-    }
+  .nav-links {
+    top: 73px;
+  }
 
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 84px;
-        left: 0;
-        right: 0;
-        background: white;
-        padding: 22px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-        box-shadow: 0 12px 20px rgba(0,0,0,.1);
-    }
+  .hero-content {
+    padding: 78px 0 88px;
+  }
 
-    .nav-links.open {
-        display: flex;
-    }
+  .hero p {
+    font-size: 15px;
+  }
 
-    .service-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
+  section {
+    padding: 65px 0;
+  }
 
-    .flyer-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
+  .about-grid,
+  .why-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-@media (max-width:650px) {
-    .topbar .container {
-        justify-content: center;
-        text-align: center;
-    }
+  .about-photo {
+    min-height: 270px;
+  }
 
-    .nav-wrap {
-        min-height: 73px;
-    }
+  .service-grid,
+  .flyer-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .nav-links {
-        top: 73px;
-    }
+  .brand-logo {
+    width: 175px;
+    max-height: 65px;
+  }
 
-    .hero-content {
-        padding: 78px 0 88px;
-    }
+  .service-modal {
+    padding: 10px;
+  }
 
-    .hero p {
-        font-size: 15px;
-    }
+  .service-modal-panel {
+    max-height: 94vh;
+  }
 
-    section {
-        padding: 65px 0;
-    }
-
-    .about-grid,
-    .why-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-photo {
-        min-height: 270px;
-    }
-
-    .service-grid,
-    .flyer-grid,
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .flyer-card img {
-        aspect-ratio: 4/4.8;
-        object-fit: contain;
-    }
-
-    .contact-copy h2 {
-        font-size: 30px;
-    }
+  .contact-copy h2 {
+    font-size: 30px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
+<!-- TOP CONTACT BAR -->
 
 <div class="topbar">
-    <div class="container">
-        <span>📍 Kubwa, FCT Abuja, Nigeria</span>
-        <span>
-            <a href="tel:+2348121771002">Call: +234 812 177 1002</a>
-            &nbsp; | &nbsp;
-            <a href="mailto:mifebglobal@gmail.com">mifebglobal@gmail.com</a>
-        </span>
-    </div>
+  <div class="container">
+    <span>📍 Kubwa, FCT Abuja, Nigeria</span>
+    <span>
+      <a href="tel:+2348121771002">Call: +234 812 177 1002</a>
+      &nbsp; | &nbsp;
+      <a href="mailto:mifebglobal@gmail.com">mifebglobal@gmail.com</a>
+    </span>
+  </div>
 </div>
 
 <!-- HEADER -->
 
 <header>
-    <div class="container nav-wrap">
+  <div class="container nav-wrap">
 
-        <a class="brand" href="#home">
-            <span class="brand-mark">M</span>
-            <span>MIFEB<small>GLOBAL</small></span>
-        </a>
+    <a class="brand" href="#home" aria-label="Mifeb Global home">
+      <img
+        class="brand-logo"
+        src="images/mifeb-global-logo.png"
+        alt="Mifeb Global — Empowering Creative Leaders">
+    </a>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-            ☰
-        </button>
+    <button class="menu-btn" id="menuBtn"
+      aria-label="Open menu" aria-expanded="false">☰</button>
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#programmes">Programmes</a></li>
-            <li><a href="#contact" class="nav-cta">Contact Us →</a></li>
-        </ul>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Our Services</a></li>
+      <li><a href="#programmes">Programmes</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us →</a></li>
+    </ul>
 
-    </div>
+  </div>
 </header>
 
 <main>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero" id="home">
-    <div class="container hero-content">
+  <div class="container hero-content">
 
-        <div class="eyebrow">Empowering Creative Leaders</div>
+    <div class="eyebrow">Empowering Creative Leaders</div>
 
-        <h1>
-            Building People.<br>
-            <span>Developing Businesses.</span><br>
-            Creating Opportunities.
-        </h1>
+    <h1>
+      Building People.<br>
+      <span>Developing Businesses.</span><br>
+      Creating Opportunities.
+    </h1>
 
-        <p>
-            Mifeb Global supports individuals and organisations through
-            professional workplace training, leadership development,
-            real estate education, MBA programme opportunities and
-            construction services.
-        </p>
+    <p>
+      Mifeb Global supports individuals and organisations through
+      professional workplace training, leadership development,
+      real estate education, MBA programme opportunities and
+      construction services.
+    </p>
 
-        <div class="hero-actions">
-            <a class="btn btn-gold" href="#services">Explore Our Services →</a>
-            <a class="btn btn-outline" href="#contact">Get in Touch</a>
-        </div>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#services">
+        Explore Our Services →
+      </a>
 
+      <a class="btn btn-outline" href="#contact">
+        Get in Touch
+      </a>
     </div>
+
+  </div>
 </section>
 
 <!-- ABOUT US -->
 
 <section id="about">
-    <div class="container about-grid">
+  <div class="container about-grid">
 
-        <div class="about-photo"></div>
-
-        <div class="about-copy">
-
-            <div class="eyebrow">Who We Are</div>
-
-            <h2>Empowering People Through Knowledge and Development</h2>
-
-            <p>
-                Mifeb Global is focused on providing professional services
-                that help individuals, teams and organisations build
-                knowledge, strengthen capabilities and pursue new opportunities.
-            </p>
-
-            <p>
-                Our areas of focus include staff training, leadership and
-                management development, real estate training, MBA programme
-                opportunities and building construction services.
-            </p>
-
-            <p>
-                We believe that practical learning, professional growth
-                and thoughtful project delivery can make a meaningful difference.
-            </p>
-
-            <a class="btn btn-gold" href="#contact">Speak With Our Team →</a>
-
-        </div>
+    <div class="about-photo"
+      role="img"
+      aria-label="Professionals collaborating in a workplace">
     </div>
+
+    <div class="about-copy">
+
+      <div class="eyebrow">Who We Are</div>
+
+      <h2>Empowering People Through Knowledge and Development</h2>
+
+      <p>
+        Mifeb Global is focused on providing professional services
+        that help individuals, teams and organisations build
+        knowledge, strengthen capabilities and pursue new opportunities.
+      </p>
+
+      <p>
+        Our areas of focus include staff training, leadership and
+        management development, real estate training, MBA programme
+        opportunities and building construction services.
+      </p>
+
+      <p>
+        We believe that practical learning, professional growth and
+        thoughtful project delivery can make a meaningful difference.
+      </p>
+
+      <a class="btn btn-gold" href="#contact">
+        Speak With Our Team →
+      </a>
+
+    </div>
+  </div>
 </section>
 
 <!-- OUR SERVICES -->
 
 <section class="services" id="services">
-    <div class="container">
 
-        <div class="section-head">
-            <div class="eyebrow">What We Do</div>
-            <h2>Our Services</h2>
-            <p>
-                Explore the services Mifeb Global provides to individuals,
-                professionals and organisations.
-            </p>
-        </div>
+  <div class="container">
 
-        <div class="service-grid">
-
-            <article class="service-card">
-                <div class="service-icon">♙</div>
-                <h3>Staff Training & Professional Development</h3>
-                <p>
-                    Workplace learning covering customer service,
-                    communication, administration, workplace professionalism
-                    and other essential skills.
-                </p>
-                <a href="#contact">Enquire about training →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">♜</div>
-                <h3>Leadership & Management Training</h3>
-                <p>
-                    Development opportunities focused on leadership capability,
-                    team management, decision-making and organisational effectiveness.
-                </p>
-                <a href="#programmes">View training flyer →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">⌂</div>
-                <h3>Real Estate Development Training</h3>
-                <p>
-                    Learning opportunities introducing real estate development,
-                    property knowledge and business opportunities in the sector.
-                </p>
-                <a href="#programmes">View programme details →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">▤</div>
-                <h3>MBA Programme</h3>
-                <p>
-                    Information and enquiries for the MBA programme,
-                    including its advertised online and offline learning format.
-                    Contact us for full programme details.
-                </p>
-                <a href="#programmes">View MBA flyer →</a>
-            </article>
-
-            <article class="service-card">
-                <div class="service-icon">▦</div>
-                <h3>Building Construction Services</h3>
-                <p>
-                    Construction-related services for clients interested in
-                    residential and commercial building projects.
-                    Contact us to discuss your requirements.
-                </p>
-                <a href="#programmes">View construction flyer →</a>
-            </article>
-
-        </div>
+    <div class="section-head">
+      <div class="eyebrow">What We Do</div>
+      <h2>Our Services</h2>
+      <p>
+        Explore the services Mifeb Global provides to individuals,
+        professionals and organisations.
+      </p>
     </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-icon">♙</div>
+        <h3>Workplace Staff Training</h3>
+        <p>
+          Practical workplace learning designed to strengthen
+          employee skills, confidence, service quality and productivity.
+        </p>
+        <button class="explore-btn" data-service="staff">
+          Explore More →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">♜</div>
+        <h3>Leadership & Management Training</h3>
+        <p>
+          Development that helps supervisors, managers and emerging
+          leaders guide teams and make effective decisions.
+        </p>
+        <button class="explore-btn" data-service="leadership">
+          Explore More →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⌂</div>
+        <h3>Real Estate Development Training</h3>
+        <p>
+          Learning opportunities that introduce property, real estate
+          development and the knowledge needed to explore the sector.
+        </p>
+        <button class="explore-btn" data-service="realestate">
+          Explore More →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▤</div>
+        <h3>MBA Programme</h3>
+        <p>
+          Programme information and enquiries for individuals
+          interested in further business and management education.
+        </p>
+        <button class="explore-btn" data-service="mba">
+          Explore More →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▦</div>
+        <h3>Building Construction Services</h3>
+        <p>
+          Construction service enquiries for clients planning
+          residential or commercial building projects.
+        </p>
+        <button class="explore-btn" data-service="construction">
+          Explore More →
+        </button>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 <!-- PROGRAMMES AND FLYERS -->
 
 <section class="programmes" id="programmes">
-    <div class="container">
 
-        <div class="section-head">
-            <div class="eyebrow">Explore Our Offers</div>
-            <h2>Programmes & Service Highlights</h2>
-            <p>
-                Learn more about our advertised training programmes and services.
-                Contact Mifeb Global for dates, fees, eligibility and enrolment information.
-            </p>
-        </div>
+  <div class="container">
 
-        <div class="flyer-grid">
-
-            <article class="flyer-card">
-                <img src="images/real-estate-leadership-training.jpg"
-                     alt="Mifeb Global real estate and leadership development training flyer">
-                <div class="flyer-caption">
-                    <h3>Real Estate & Leadership Development</h3>
-                    <p>Six-week online/offline training programme.</p>
-                    <a href="mailto:mifebglobal@gmail.com?subject=Real%20Estate%20Training%20Enquiry">
-                        Enquire now →
-                    </a>
-                </div>
-            </article>
-
-            <article class="flyer-card">
-                <img src="images/mba-programme.jpg"
-                     alt="Mifeb Global MBA programme flyer">
-                <div class="flyer-caption">
-                    <h3>MBA Programme</h3>
-                    <p>Three-month online/offline programme as advertised.</p>
-                    <a href="mailto:mifebglobal@gmail.com?subject=MBA%20Programme%20Enquiry">
-                        Enquire now →
-                    </a>
-                </div>
-            </article>
-
-            <article class="flyer-card">
-                <img src="images/workstaff-training.png"
-                     alt="Mifeb Global workstaff training flyer">
-                <div class="flyer-caption">
-                    <h3>Workstaff Training</h3>
-                    <p>Training in customer service, communication, administration and workplace skills.</p>
-                    <a href="mailto:mifebglobal@gmail.com?subject=Workstaff%20Training%20Enquiry">
-                        Enquire now →
-                    </a>
-                </div>
-            </article>
-
-            <article class="flyer-card">
-                <img src="images/construction-services.png"
-                     alt="Mifeb Global construction services flyer">
-                <div class="flyer-caption">
-                    <h3>Construction Services</h3>
-                    <p>Get in touch to discuss your building and construction requirements.</p>
-                    <a href="mailto:mifebglobal@gmail.com?subject=Construction%20Services%20Enquiry">
-                        Enquire now →
-                    </a>
-                </div>
-            </article>
-
-        </div>
+    <div class="section-head">
+      <div class="eyebrow">Explore Our Offers</div>
+      <h2>Programmes & Service Highlights</h2>
+      <p>
+        Learn more about our advertised training programmes and
+        services. Contact Mifeb Global for dates, fees, eligibility
+        and enrolment information.
+      </p>
     </div>
+
+    <div class="flyer-grid">
+
+      <article class="flyer-card">
+        <img src="images/real-estate-leadership-training.jpg"
+          alt="Mifeb Global Real Estate and Leadership Development flyer">
+
+        <div class="flyer-caption">
+          <h3>Real Estate & Leadership Development</h3>
+          <p>Six-week online/offline training programme.</p>
+          <a href="mailto:mifebglobal@gmail.com?subject=Real%20Estate%20and%20Leadership%20Training%20Enquiry">
+            Enquire now →
+          </a>
+        </div>
+      </article>
+
+      <article class="flyer-card">
+        <img src="images/mba-programme.jpg"
+          alt="Mifeb Global MBA Programme flyer">
+
+        <div class="flyer-caption">
+          <h3>MBA Programme</h3>
+          <p>Three-month online/offline programme as advertised.</p>
+          <a href="mailto:mifebglobal@gmail.com?subject=MBA%20Programme%20Enquiry">
+            Enquire now →
+          </a>
+        </div>
+      </article>
+
+      <article class="flyer-card">
+        <img src="images/workstaff-training.png"
+          alt="Mifeb Global Workplace Staff Training flyer">
+
+        <div class="flyer-caption">
+          <h3>Workplace Staff Training</h3>
+          <p>
+            Training in customer service, communication,
+            administration and workplace skills.
+          </p>
+          <a href="mailto:mifebglobal@gmail.com?subject=Workplace%20Staff%20Training%20Enquiry">
+            Enquire now →
+          </a>
+        </div>
+      </article>
+
+      <article class="flyer-card">
+        <img src="images/construction-services.png"
+          alt="Mifeb Global Construction Services flyer">
+
+        <div class="flyer-caption">
+          <h3>Construction Services</h3>
+          <p>
+            Get in touch to discuss your building and
+            construction requirements.
+          </p>
+          <a href="mailto:mifebglobal@gmail.com?subject=Construction%20Services%20Enquiry">
+            Enquire now →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 <!-- WHY CHOOSE US -->
 
 <section class="why" id="why-us">
-    <div class="container why-grid">
 
-        <div>
-            <div class="eyebrow">Why Mifeb Global</div>
+  <div class="container why-grid">
 
-            <h2>
-                Committed to
-                <span class="gold-text">Professional Growth</span>
-                and Development
-            </h2>
+    <div>
+      <div class="eyebrow">Why Mifeb Global</div>
 
-            <p>
-                We recognise the value of knowledge, practical skills
-                and dependable service. Our work is centred on understanding
-                client needs and supporting their development goals.
-            </p>
-        </div>
+      <h2>
+        Committed to
+        <span class="gold-text">Professional Growth</span>
+        and Development
+      </h2>
 
-        <div class="why-list">
-
-            <div class="why-item">
-                <div class="check">✓</div>
-                <div>
-                    <h3>Professional Learning</h3>
-                    <p>Training focused on practical workplace and leadership skills.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="check">✓</div>
-                <div>
-                    <h3>Multiple Service Areas</h3>
-                    <p>Training, education opportunities, real estate development learning and construction services.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="check">✓</div>
-                <div>
-                    <h3>Client-Focused Engagement</h3>
-                    <p>We welcome conversations about your goals, needs and project requirements.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="check">✓</div>
-                <div>
-                    <h3>Commitment to Development</h3>
-                    <p>Supporting individuals and organisations as they build for the future.</p>
-                </div>
-            </div>
-
-        </div>
+      <p>
+        We recognise the value of knowledge, practical skills and
+        dependable service. Our work is centred on understanding
+        client needs and supporting their development goals.
+      </p>
     </div>
+
+    <div class="why-list">
+
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h3>Professional Learning</h3>
+          <p>
+            Training focused on practical workplace and leadership skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h3>Multiple Service Areas</h3>
+          <p>
+            Training, education opportunities, real estate development
+            learning and construction services.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h3>Client-Focused Engagement</h3>
+          <p>
+            We welcome conversations about your goals, needs
+            and project requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="why-item">
+        <div class="check">✓</div>
+        <div>
+          <h3>Commitment to Development</h3>
+          <p>
+            Supporting individuals and organisations as they
+            build for the future.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- CALL TO ACTION -->
 
 <section class="cta">
-    <div class="container">
 
-        <div class="eyebrow">Let's Work Together</div>
+  <div class="container">
 
-        <h2>Ready to Take the Next Step?</h2>
+    <div class="eyebrow">Let's Work Together</div>
 
-        <p>
-            Contact Mifeb Global to ask about staff training,
-            leadership development, real estate training,
-            the MBA programme or construction services.
-        </p>
+    <h2>Ready to Take the Next Step?</h2>
 
-        <a class="btn btn-gold" href="tel:+2348121771002">
-            Call +234 812 177 1002
-        </a>
+    <p>
+      Contact Mifeb Global to ask about staff training,
+      leadership development, real estate training,
+      the MBA programme or construction services.
+    </p>
 
-    </div>
+    <a class="btn btn-gold" href="tel:+2348121771002">
+      Call +234 812 177 1002
+    </a>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 
 <section id="contact">
-    <div class="container contact-grid">
 
-        <div class="contact-copy">
-            <div class="eyebrow">Get in Touch</div>
+  <div class="container contact-grid">
 
-            <h2>Let's Discuss Your Requirements</h2>
+    <div class="contact-copy">
+      <div class="eyebrow">Get in Touch</div>
 
-            <p>
-                We welcome enquiries from individuals, businesses
-                and organisations. Reach us by phone or email,
-                or visit our office in Kubwa, Abuja.
-            </p>
-        </div>
+      <h2>Let's Discuss Your Requirements</h2>
 
-        <div class="contact-card">
-
-            <div class="contact-row">
-                <div class="contact-symbol">⌖</div>
-                <div>
-                    <strong>Office Address</strong>
-                    No. 1 Mifeb Avenue, by Berith Specialist Hospital,
-                    F01 Estate, Kubwa, FCT Abuja.
-                </div>
-            </div>
-
-            <div class="contact-row">
-                <div class="contact-symbol">✉</div>
-                <div>
-                    <strong>Email</strong>
-                    <a href="mailto:mifebglobal@gmail.com">
-                        mifebglobal@gmail.com
-                    </a>
-                </div>
-            </div>
-
-            <div class="contact-row">
-                <div class="contact-symbol">☎</div>
-                <div>
-                    <strong>Phone / WhatsApp</strong>
-                    <a href="tel:+2348121771002">+234 812 177 1002</a>
-                    <br>
-                    <a href="https://wa.me/2348121771002" target="_blank" rel="noopener">
-                        Message us on WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <div class="contact-row">
-                <div class="contact-symbol">◎</div>
-                <div>
-                    <strong>Follow Mifeb Global</strong>
-                    <span class="social-names">
-                        Facebook · Instagram · YouTube: MIFEB GLOBAL
-                    </span>
-                    <br>
-                    <small>Official profile links can be added when supplied.</small>
-                </div>
-            </div>
-
-        </div>
+      <p>
+        We welcome enquiries from individuals, businesses and
+        organisations. Reach us by phone or email, or visit
+        our office in Kubwa, Abuja.
+      </p>
     </div>
+
+    <div class="contact-card">
+
+      <div class="contact-row">
+        <div class="contact-symbol">⌖</div>
+        <div>
+          <strong>Office Address</strong>
+          No. 1 Mifeb Avenue, by Berith Specialist Hospital,
+          F01 Estate, Kubwa, FCT Abuja.
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-symbol">✉</div>
+        <div>
+          <strong>Email</strong>
+          <a href="mailto:mifebglobal@gmail.com">
+            mifebglobal@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-symbol">☎</div>
+        <div>
+          <strong>Phone / WhatsApp</strong>
+          <a href="tel:+2348121771002">+234 812 177 1002</a>
+          ·
+          <a href="https://wa.me/2348121771002"
+            target="_blank" rel="noopener">
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-symbol">◎</div>
+        <div>
+          <strong>Follow Mifeb Global</strong>
+          <span class="social-names">
+            Facebook · Instagram · YouTube: MIFEB GLOBAL
+          </span>
+          <br>
+          <small>Official profile links can be added when supplied.</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 </main>
 
+<!-- EXPLORE MORE SERVICE DETAILS POP-UP -->
+
+<div class="service-modal" id="serviceModal"
+  role="dialog" aria-modal="true"
+  aria-labelledby="modalTitle" aria-hidden="true">
+
+  <div class="service-modal-panel">
+
+    <button class="modal-close" type="button"
+      aria-label="Close service details">×</button>
+
+    <div class="eyebrow">Mifeb Global Services</div>
+
+    <h2 id="modalTitle"></h2>
+
+    <div id="modalBody"></div>
+
+    <div class="modal-actions">
+
+      <a class="btn btn-gold" id="modalEnquiry"
+        href="https://wa.me/2348121771002"
+        target="_blank" rel="noopener">
+        Enquire on WhatsApp →
+      </a>
+
+      <a class="btn" id="modalContact"
+        style="background:#edf2fa;color:var(--navy)"
+        href="#contact">
+        Contact Details
+      </a>
+
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 
 <footer>
-    <div class="container">
 
-        <div class="footer-grid">
+  <div class="container">
 
-            <div>
-                <div class="footer-brand">MIFEB GLOBAL</div>
-                <p>
-                    Empowering Creative Leaders. Supporting professional
-                    development, learning opportunities and construction services.
-                </p>
-            </div>
+    <div class="footer-grid">
 
-            <div>
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Our Services</a>
-                    <a href="#programmes">Programmes</a>
-                    <a href="#contact">Contact Us</a>
-                </div>
-            </div>
+      <div>
+        <img class="footer-logo"
+          src="images/mifeb-global-logo.png"
+          alt="Mifeb Global official logo">
 
-            <div>
-                <h3>Contact</h3>
-                <div class="footer-links">
-                    <a href="tel:+2348121771002">+234 812 177 1002</a>
-                    <a href="mailto:mifebglobal@gmail.com">mifebglobal@gmail.com</a>
-                    <span>
-                        No. 1 Mifeb Avenue, by Berith Specialist Hospital,
-                        F01 Estate, Kubwa, FCT Abuja.
-                    </span>
-                </div>
-            </div>
+        <p>
+          Empowering Creative Leaders. Supporting professional
+          development, learning opportunities and construction services.
+        </p>
+      </div>
 
+      <div>
+        <h3>Quick Links</h3>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#programmes">Programmes</a>
+          <a href="#contact">Contact Us</a>
         </div>
+      </div>
 
-        <div class="copyright">
-            © <span id="year"></span> Mifeb Global. All rights reserved.
+      <div>
+        <h3>Contact</h3>
+
+        <div class="footer-links">
+          <a href="tel:+2348121771002">+234 812 177 1002</a>
+          <a href="mailto:mifebglobal@gmail.com">
+            mifebglobal@gmail.com
+          </a>
+          <span>
+            No. 1 Mifeb Avenue, by Berith Specialist Hospital,
+            F01 Estate, Kubwa, FCT Abuja.
+          </span>
         </div>
+      </div>
 
     </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Mifeb Global. All rights reserved.
+    </div>
+
+  </div>
 </footer>
 
+<!-- JAVASCRIPT -->
+
 <script>
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", function() {
-    const open = navLinks.classList.toggle("open");
+/* MOBILE NAVIGATION */
 
-    menuBtn.setAttribute("aria-expanded", String(open));
-    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-    menuBtn.textContent = open ? "×" : "☰";
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+
+  const open = navLinks.classList.toggle('open');
+
+  menuBtn.setAttribute('aria-expanded', String(open));
+
+  menuBtn.setAttribute(
+    'aria-label',
+    open ? 'Close menu' : 'Open menu'
+  );
+
+  menuBtn.textContent = open ? '×' : '☰';
+
 });
 
-document.querySelectorAll("#navLinks a").forEach(function(link) {
-    link.addEventListener("click", function() {
-        navLinks.classList.remove("open");
-        menuBtn.setAttribute("aria-expanded", "false");
-        menuBtn.setAttribute("aria-label", "Open menu");
-        menuBtn.textContent = "☰";
-    });
+document.querySelectorAll('#navLinks a').forEach(link => {
+
+  link.addEventListener('click', () => {
+
+    navLinks.classList.remove('open');
+
+    menuBtn.setAttribute('aria-expanded', 'false');
+
+    menuBtn.setAttribute('aria-label', 'Open menu');
+
+    menuBtn.textContent = '☰';
+
+  });
+
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+
+/* SERVICE INFORMATION FOR EXPLORE MORE */
+
+const serviceDetails = {
+
+  staff: {
+
+    title: 'Workplace Staff Training',
+
+    intro: 'Mifeb Global’s Workplace Staff Training is designed to help organisations build a more capable, confident and productive workforce. Training can be arranged around an organisation’s needs, with programme duration, venue and fees agreed in advance.',
+
+    covers: [
+      'Employee competence and productivity',
+      'Professionalism and workplace ethics',
+      'Communication skills',
+      'Leadership development',
+      'Customer service',
+      'Sales and marketing',
+      'Human resource management',
+      'Administration and teamwork'
+    ],
+
+    benefits: [
+      'Improves employees’ confidence and day-to-day performance',
+      'Encourages professional conduct, accountability and teamwork',
+      'Strengthens communication with customers, colleagues and supervisors',
+      'Helps organisations improve service delivery and workplace productivity',
+      'Allows training focus to be matched to the organisation’s priorities'
+    ]
+
+  },
+
+  leadership: {
+
+    title: 'Leadership & Management Training',
+
+    intro: 'This service supports current and aspiring team leaders, supervisors and managers with practical knowledge for guiding people and coordinating work. The learning focus can be tailored to the responsibilities and challenges of the participating organisation.',
+
+    covers: [
+      'Leadership styles and responsibilities',
+      'Team coordination and motivation',
+      'Communication and delegation',
+      'Problem-solving and decision-making',
+      'Performance supervision and accountability',
+      'Workplace ethics and conflict management'
+    ],
+
+    benefits: [
+      'Builds confidence in leading teams',
+      'Supports clearer communication and delegation',
+      'Encourages responsible and timely decisions',
+      'Helps align team activities with organisational goals',
+      'Promotes a positive and accountable workplace culture'
+    ]
+
+  },
+
+  realestate: {
+
+    title: 'Real Estate Development Training',
+
+    intro: 'This training introduces participants to key concepts in real estate and property development. It is intended for people who want to understand the sector better and explore its professional or business opportunities.',
+
+    covers: [
+      'Introduction to the real estate sector',
+      'Property and development fundamentals',
+      'Understanding market needs and opportunities',
+      'Basic project and investment considerations',
+      'Professional practice and client relationships'
+    ],
+
+    benefits: [
+      'Builds foundational knowledge of real estate',
+      'Helps participants understand the stages and considerations involved in development',
+      'Improves awareness of property-sector opportunities and risks',
+      'Provides a starting point for further learning and informed enquiries'
+    ]
+
+  },
+
+  mba: {
+
+    title: 'MBA Programme',
+
+    intro: 'Mifeb Global provides information and enquiry support for its advertised MBA programme. The programme flyer indicates online and offline learning options. Prospective participants should contact the company directly for the current curriculum, entry requirements, schedule, fees, awarding institution and accreditation details before enrolling.',
+
+    covers: [
+      'Programme format and learning arrangements',
+      'Business and management learning areas, as confirmed by the programme provider',
+      'Application and participation information',
+      'Current schedule, fees and entry requirements'
+    ],
+
+    benefits: [
+      'Helps prospective learners understand the programme before applying',
+      'Provides a route to ask questions about study arrangements and requirements',
+      'Allows interested participants to confirm whether the programme fits their learning and career goals'
+    ],
+
+    note: 'Please request and verify the awarding institution and accreditation information directly before making payment or enrolment decisions.'
+
+  },
+
+  construction: {
+
+    title: 'Building Construction Services',
+
+    intro: 'Mifeb Global welcomes enquiries from individuals, families, businesses and organisations planning building projects. The first step is to discuss the client’s requirements, intended use of the building, location, project scope and expectations.',
+
+    covers: [
+      'Initial discussion of residential or commercial project needs',
+      'Project scope, priorities and requirements',
+      'Discussion of planning, timelines and budget considerations',
+      'Clarification of the services and professional support required for the project'
+    ],
+
+    benefits: [
+      'Creates a clearer understanding of project requirements',
+      'Helps clients organise priorities and expectations early',
+      'Provides an opportunity to discuss timelines and budget considerations',
+      'Establishes a direct point of contact for project enquiries'
+    ],
+
+    note: 'Specific construction deliverables, professional appointments, approvals and project terms should be confirmed with Mifeb Global in writing for each project.'
+
+  }
+
+};
+
+
+/* OPEN AND CLOSE SERVICE DETAILS */
+
+const serviceModal = document.getElementById('serviceModal');
+
+const modalTitle = document.getElementById('modalTitle');
+
+const modalBody = document.getElementById('modalBody');
+
+const closeModal = () => {
+
+  serviceModal.classList.remove('open');
+
+  serviceModal.setAttribute('aria-hidden', 'true');
+
+  document.body.style.overflow = '';
+
+};
+
+
+document.querySelectorAll('[data-service]').forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    const detail = serviceDetails[button.dataset.service];
+
+    if (!detail) return;
+
+    modalTitle.textContent = detail.title;
+
+    modalBody.innerHTML = `
+
+      <p>${detail.intro}</p>
+
+      <h3>What the service covers</h3>
+
+      <ul>
+        ${detail.covers.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+
+      <h3>Benefits</h3>
+
+      <ul>
+        ${detail.benefits.map(item => `<li>${item}</li>`).join('')}
+      </ul>
+
+      ${detail.note ? `<p><strong>${detail.note}</strong></p>` : ''}
+
+    `;
+
+    document.getElementById('modalEnquiry').href =
+      `https://wa.me/2348121771002?text=${
+        encodeURIComponent(
+          'Hello Mifeb Global, I would like to enquire about ' +
+          detail.title + '.'
+        )
+      }`;
+
+    serviceModal.classList.add('open');
+
+    serviceModal.setAttribute('aria-hidden', 'false');
+
+    document.body.style.overflow = 'hidden';
+
+    document.querySelector('.modal-close').focus();
+
+  });
+
+});
+
+
+document.querySelector('.modal-close')
+  .addEventListener('click', closeModal);
+
+
+serviceModal.addEventListener('click', event => {
+
+  if (event.target === serviceModal) {
+    closeModal();
+  }
+
+});
+
+
+document.addEventListener('keydown', event => {
+
+  if (
+    event.key === 'Escape' &&
+    serviceModal.classList.contains('open')
+  ) {
+    closeModal();
+  }
+
+});
+
+
+document.getElementById('modalContact')
+  .addEventListener('click', closeModal);
+
+
+/* AUTOMATIC COPYRIGHT YEAR */
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
 </script>
 
 </body>
 </html>
-
